@@ -14,22 +14,29 @@ public class mahasiswa {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         
-        int totaldetik,detiksekarang,totalmenit; 
-        int menitsekarang,totaljam,jamsekarang;
+        String nama, nim,ilustrasi,fak; 
+        
+        System.out.print("Ilustrasi : " );
+        ilustrasi = input.nextLine();
+        System.out.print("Nim : " );
+        nim = input.nextLine();
+        System.out.print("Nama : " );
+        nama = input.nextLine();
+        System.out.print("Fakultas : " );
+        fak = input.nextLine();
+        
+   
+
+        System.out.println("");
         
         
-        System.out.print("total detik : " );
-        totaldetik = input.nextInt();   
-        
-        detiksekarang = totaldetik % 60;
-        totalmenit = totaldetik / 60;
-        menitsekarang = totalmenit % 60;
-        totaljam = totalmenit / 60;
-        jamsekarang = totaljam % 24 ;
-        
-        System.out.println(jamsekarang+" : "+menitsekarang+" : "+detiksekarang);
-       
-        
+        System.out.println("+------------------------------------------+");
+        System.out.println("|          Biodata Mahasiswa               |");
+        System.out.println("+------------------------------------------+");
+        System.out.println(" ilustrasi: " + ilustrasi);
+        System.out.println(" NIM : " + nim);
+        System.out.println(" Nama : " + nama);
+        System.out.println(" Fakultas : " + fak);
        
         
     }
